@@ -1,0 +1,2 @@
+print(list('hello'))
+print(list(range(1,10,2)))
