@@ -1,0 +1,45 @@
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 9, in main
+    bar('0')
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 6, in bar
+    return foo(s) * 2
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 4, in foo
+    return 10 / int(s)
+ZeroDivisionError: division by zero
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 9, in main
+    bar('0')
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 6, in bar
+    return foo(s) * 2
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 4, in foo
+    return 10 / int(s)
+ZeroDivisionError: division by zero
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 9, in main
+    bar('0')
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 6, in bar
+    return foo(s) * 2
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 4, in foo
+    return 10 / int(s)
+ZeroDivisionError: division by zero
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 9, in main
+    bar('0')
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 6, in bar
+    return foo(s) * 2
+  File "d:/Py100/Python_100_Days/Week4_LXF/res/err_Logging.py", line 4, in foo
+    return 10 / int(s)
+ZeroDivisionError: division by zero
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "D:\Py100\Python_100_Days\Week4_LXF\res\err_Logging.py", line 9, in main
+    bar('0')
+  File "D:\Py100\Python_100_Days\Week4_LXF\res\err_Logging.py", line 6, in bar
+    return foo(s) * 2
+  File "D:\Py100\Python_100_Days\Week4_LXF\res\err_Logging.py", line 4, in foo
+    return 10 / int(s)
+ZeroDivisionError: division by zero
