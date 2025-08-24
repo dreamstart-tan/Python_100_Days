@@ -25,7 +25,7 @@ def wordclass(mean):
             meanclass+=i[:-1]+","
     return meanclass
 
-book = xlrd.open_workbook(r'D:\Py100\Python_100_Days\EnglishDictionary01\2021new.xls')
+book = xlrd.open_workbook(r'F:\Python_100_Days\EnglishDictionary01\20250824_mysql.xls')
 names = book.sheet_names()
 sheet = book.sheet_by_name('Sheet1')
 row = sheet.row_values(0)
@@ -52,4 +52,4 @@ for i in col:
     wtsheet.write(m,4,sorcol[m-1])
     m+=1
 
-wtbook.save(r'D:\Py100\Python_100_Days\EnglishDictionary01\2021new+.xls')
+wtbook.save(r'F:\Python_100_Days\EnglishDictionary01\20250824_mysql+.xls')

@@ -1,8 +1,8 @@
 import pymysql
 import xlrd
 
-book = xlrd.open_workbook(r'D:\Py100\Python_100_Days\EnglishDictionary01\2021new.xls')
-sheet = book.sheet_by_name('Sheet1')
+book = xlrd.open_workbook(r'F:\Python_100_Days\EnglishDictionary01\20250824_mysql+.xls')
+sheet = book.sheet_by_name('Sheet')
 wordcol = sheet.col_values(0)[1:]
 classcol = sheet.col_values(1)[1:]
 meancol = sheet.col_values(2)[1:]
@@ -23,6 +23,7 @@ cur = conn.cursor() # 生成游标对象
 sql1 = "select word from mainword"
 cur.execute(sql1)
 data = cur.fetchall()
+
 print(data)
 datalist = []
 for i in data:
@@ -35,7 +36,8 @@ for i in range(len(wordcol)):
         cur.execute(sql3)
         data = cur.fetchall()
         print(data[0][0])
-        sql4 = "UPDATE mainword SET wordcount = " + str(data[0][0]+1)+ " where word = \"" + wordcol[i]+"\""
+        print(type(data[0][0]))
+        sql4 = "UPDATE mainword SET wordcount = " + str(int(data[0][0]) + 1)+ " where word = \"" + wordcol[i]+"\""
         print(sql4)
         cur.execute(sql4)
         sql3 = "select wordcount from mainword where word = \"" + wordcol[i] + "\""
